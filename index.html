@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Geometry Genius</title>
+  <!-- Tailwind link is set here -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="tracking-wide">
+  <header class="text-white bg-sky-200 md-flex item-center flex justify-between ml-10 mr-10 mt-10">
+    <div class="text-black ml-10 mt-3 mb-4">
+      <h1 class="font-bold">Interactive</h1>
+      <p>Geometry Genius</p>
+    </div>
+    <div class="pt-3 pr-10">
+      <button id=""
+        class="bg-blue-600 mt-2 px-6 py-2 text-white rounded-full font-medium hover:bg-blue-700">Blog
+      </button>
+    </div>
+  </header>
+  <!-- main section is start here -->
+  <main class="grid grid-cols-12 mx-auto gap-4">
+    <section class="mt-16 text-center col-span-8">
+      <div class="grid grid-cols-3 gap-4 ml-10 ">
+        <!-- shape-1 -->
+        <div
+          class="card w-full space-x-2 mt-6 mx-auto py-8 bg-base-100 shadow-2xl border border-2 hover:bg-red-600 hover:text-white hover:scale-x-105">
+          <div class="">
+            <img src="./assests/Polygon 1.png" alt="" class="mx-auto">
+          </div>
+          <div class="text-center py-3">
+            <h1>Triangle 1</h1>
+            <p>Area (A) = 0.5 X b X h</p>
+          </div>
+          <div>
+            <input id="base-value" class="bg-gray-200 w-24 text-ba px-2 rounded-lg" type="text" placeholder="b">
+            <p class="inline px-2 text-xl">cm</p>
+            <input id="height-value" class="bg-gray-200 text-black w-24 px-2 rounded-lg" type="text" placeholder="h">
+            <p class="inline px-2 text-xl">cm</p>
+          </div>
+          <div>
+            <button id="calculation-btn"
+              class="bg-blue-600 w-1/2 py-2 mt-9 text-white text-lg rounded-lg font-medium hover:bg-blue-700"
+              onclick="calculation(this);">Calculate
+            </button>
+          </div>
+        </div>
+        <!-- shape-2 -->
+        <div
+          class="card w-full space-x-2 mt-6 mx-auto py-8 bg-base-100 shadow-2xl border border-2 hover:bg-red-600 hover:text-white hover:scale-x-105">
+          <div class="">
+            <img src="./assests/Rectangle 10.png" alt="" class="mx-auto">
+          </div>
+          <div class="text-center py-3">
+            <h1>Triangle 2</h1>
+            <p>Area (A) = 0.5 X b X h</p>
+          </div>
+          <div>
+            <input class="bg-gray-200 w-24 px-2 rounded-lg" type="text" placeholder="b">
+            <p class="inline px-2 text-xl">cm</p>
+            <input class="bg-gray-200 w-24 px-2 rounded-lg" type="text" placeholder="h">
+            <p class="inline px-2 text-xl">cm</p>
+          </div>
+          <div>
+            <button id=""
+              class="bg-blue-600 w-1/2 py-2 mt-9 text-white text-lg rounded-lg font-medium hover:bg-blue-700"
+              onclick="clickButton(this);">Calculate</button>
+          </div>
+        </div>
+        <!-- shape-3 -->
+        <div
+          class="card w-full space-x-2 mt-6 mx-auto py-8 bg-base-100 shadow-2xl border border-2 hover:bg-red-600 hover:text-white hover:scale-x-105">
+          <div class="">
+            <img src="./assests/Rectangle 11.png" alt="" class="mx-auto">
+          </div>
+          <div class="text-center py-3">
+            <h1>Triangle 3</h1>
+            <p>Area (A) = 0.5 X b X h</p>
+          </div>
+          <div>
+            <input class="bg-gray-200 w-24 px-2 rounded-lg" type="text" placeholder="b">
+            <p class="inline px-2 text-xl">cm</p>
+            <input class="bg-gray-200 w-24 px-2 rounded-lg" type="text" placeholder="h">
+            <p class="inline px-2 text-xl">cm</p>
+          </div>
+          <div>
+            <button id=""
+              class="bg-blue-600 w-1/2 py-2 mt-9 text-white text-lg rounded-lg font-medium hover:bg-blue-700"
+              onclick="clickButton(this);">Calculate</button>
+          </div>
+        </div>
+        <!-- shape-4 -->
+        <div
+          class="card w-full space-x-2 mt-6 mx-auto py-8 bg-base-100 shadow-2xl border border-2 hover:bg-red-600 hover:text-white hover:scale-x-105">
+          <div class="">
+            <img src="/assests/Rectangle 9 (1).png" alt="" class="mx-auto">
+          </div>
+          <div class="text-center py-3">
+            <h1>Triangle 4</h1>
+            <p>Area (A) = 0.5 X b X h</p>
+          </div>
+          <div>
+            <input class="bg-gray-200 w-24 px-2 text-black rounded-lg" type="text" placeholder="b">
+            <p class="inline px-2 text-xl">cm</p>
+            <input class="bg-gray-200 w-24 px-2 rounded-lg" type="text" placeholder="h">
+            <p class="inline px-2 text-xl">cm</p>
+          </div>
+          <div>
+            <button id=""
+              class="bg-blue-600 w-1/2 py-2 mt-9 text-white text-lg rounded-lg font-medium hover:bg-blue-700"
+              onclick="clickButton(this);">Calculate</button>
+          </div>
+        </div>
+        <!-- shape-5 -->
+        <div
+          class="card w-full space-x-2 mt-6 mx-auto py-8 bg-base-100 shadow-2xl border border-2 hover:bg-red-600 hover:text-white hover:scale-x-105">
+          <div class="">
+            <img src="./assests/Rectangle 9.png" alt="" class="mx-auto">
+          </div>
+          <div class="text-center py-3">
+            <h1>Triangle 5</h1>
+            <p>Area (A) = 0.5 X b X h</p>
+          </div>
+          <div>
+            <input class="bg-gray-200 w-24 px-2 rounded-lg" type="text" placeholder="b">
+            <p class="inline px-2 text-xl">cm</p>
+            <input class="bg-gray-200 w-24 px-2 rounded-lg" type="text" placeholder="h">
+            <p class="inline px-2 text-xl">cm</p>
+          </div>
+          <div>
+            <button id=""
+              class="bg-blue-600 w-1/2 py-2 mt-9 text-white text-lg rounded-lg font-medium hover:bg-blue-700"
+              onclick="clickButton(this);">Calculate</button>
+          </div>
+        </div>
+        <!-- shape-6 -->
+        <div
+          class="card w-full space-x-2 mt-6 mx-auto py-8 bg-base-100 shadow-2xl border border-2 hover:bg-red-600 hover:text-white hover:scale-x-105">
+          <div class="">
+            <img src="./assests/Ellipse 1.png" alt="" class="mx-auto">
+          </div>
+          <div class="text-center py-3">
+            <h1>Triangle 6</h1>
+            <p>Area (A) = 0.5 X b X h</p>
+          </div>
+          <div>
+            <input class="bg-gray-200 w-24 px-2 rounded-lg" type="text" placeholder="b">
+            <p class="inline px-2 text-xl">cm</p>
+            <input class="bg-gray-200 w-24 px-2 rounded-lg" type="text" placeholder="h">
+            <p class="inline px-2 text-xl">cm</p>
+          </div>
+          <div>
+            <button id=""
+              class="bg-blue-600 w-1/2 py-2 mt-9 text-white text-lg rounded-lg font-medium hover:bg-blue-700"
+              onclick="clickButton(this);">Calculate</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class=" mt-14 col-span-4 mr-10 bg-white rounded">
+      <div>
+        <h2 id="areas" class=" px-2 py-2 text-3xl font-semibold underline text-center text-black">Area Calculation
+        </h2>
+        <h3 class="text-center border border-2 border-gray-200 mt-10 py-4"><span
+            class="font-semibold text-2xl text-blue-500" id="total">00</span></h3>
+      </div>
+
+      <!-- table start here  -->
+      <div class="overflow-x-auto">
+        <table class="table table-zebra w-full">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>SL</th>
+              <th>Total</th>
+              <th>Values</th>
+            </tr>
+          </thead>
+          <tbody id="calculation-card">
+            <tr>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- js link here  -->
+  <script src="./js/Calculation.js"></script>
+  <script src="./js/button.js"></script>
+</body>
+
+</html>
